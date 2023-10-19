@@ -1,9 +1,9 @@
 # datasette-localized-numbers
 
 [![PyPI](https://img.shields.io/pypi/v/datasette-localized-numbers.svg)](https://pypi.org/project/datasette-localized-numbers/)
-[![Changelog](https://img.shields.io/github/v/release/vitlais/datasette-localized-numbers?include_prereleases&label=changelog)](https://github.com/vitlais/datasette-localized-numbers/releases)
-[![Tests](https://github.com/vitlais/datasette-localized-numbers/workflows/Test/badge.svg)](https://github.com/vitlais/datasette-localized-numbers/actions?query=workflow%3ATest)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/vitlais/datasette-localized-numbers/blob/main/LICENSE)
+[![Changelog](https://img.shields.io/github/v/release/vitlais/datasette-localized-numbers?include_prereleases&label=changelog)](https://github.com/svkau/datasette-localized-numbers/releases)
+[![Tests](https://github.com/vitlais/datasette-localized-numbers/workflows/Test/badge.svg)](https://github.com/svkau/datasette-localized-numbers/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/svkau/datasette-localized-numbers/blob/main/LICENSE)
 
 Adds filter for Ninja to show localized numbers.
 
