@@ -1,0 +1,33 @@
+[project]
+name = "datasette-localized-numbers"
+version = "0.1"
+description = "Adds filter for Ninja to show localized numbers."
+readme = "README.md"
+authors = [{name = "Henrik Vitalis"}]
+license = {text = "Apache-2.0"}
+classifiers=[
+    "Framework :: Datasette",
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "datasette"
+]
+
+[project.urls]
+Homepage = "https://github.com/vitlais/datasette-localized-numbers"
+Changelog = "https://github.com/vitlais/datasette-localized-numbers/releases"
+Issues = "https://github.com/vitlais/datasette-localized-numbers/issues"
+CI = "https://github.com/vitlais/datasette-localized-numbers/actions"
+
+[project.entry-points.datasette]
+localized_numbers = "datasette_localized_numbers"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+
+[tool.setuptools.package-data]
+datasette_localized_numbers = ["static/*", "templates/*"]
