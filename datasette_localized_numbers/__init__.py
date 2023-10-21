@@ -71,3 +71,10 @@ def render_cell(value, column, table, database, datasette):
 def prepare_jinja2_environment(env):
     env.filters["number"] = lambda u: show_number(u)
     env.filters["currency"] = lambda u: show_currency(u)
+
+
+@hookimpl
+def prepare_connection(conn):
+    conn.create_function(
+        "localized_number", 1, show_number
+    )
