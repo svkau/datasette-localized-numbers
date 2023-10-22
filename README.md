@@ -18,7 +18,27 @@ datasette install datasette-localized-numbers
 ```
 ## Usage
 
-Usage instructions go here.
+### Render localized number and currency
+
+### Filter for Ninja2 templates
+```
+{{ value|number }}
+
+{{ value|currency }}
+```
+
+### Custom SQL function
+```
+SELECT(localized_number(1234567, "se_SE"))
+```
+
+Result: "1 234 567" 
+
+```
+SELECT(localized_currency(1234567, "SEK", "se_SE))
+```
+
+Result: "1 234 567,00 kr"
 
 ## Development
 
