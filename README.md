@@ -1,6 +1,5 @@
 # datasette-localized-numbers
 
-[![PyPI](https://img.shields.io/pypi/v/datasette-localized-numbers.svg)](https://pypi.org/project/datasette-localized-numbers/)
 [![Changelog](https://img.shields.io/github/v/release/svkau/datasette-localized-numbers?include_prereleases&label=changelog)](https://github.com/svkau/datasette-localized-numbers/releases)
 [![Tests](https://github.com/svkau/datasette-localized-numbers/workflows/Test/badge.svg)](https://github.com/svkau/datasette-localized-numbers/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/svkau/datasette-localized-numbers/blob/main/LICENSE)
@@ -9,6 +8,7 @@ Uses [Babel](https://github.com/python-babel/babel) to add some localisation fea
 
 - Render formatted cell-values, e.g. 1234567 > 1 234 567 and 1234567 > 1 234 567,00 kr
 - Filters for Ninja2 to show localized numbers.
+- Custom SQL functions.
 
 ## Installation
 
@@ -21,21 +21,27 @@ datasette install datasette-localized-numbers
 ### Render localized number and currency
 
 ### Filter for Ninja2 templates
-```
-{{ value|number }}
 
-{{ value|currency }}
+(sv_SE only!)
+
+```
+{{ value|localized_number }}
+
+{{ value|localized_currency }}
 ```
 
 ### Custom SQL function
+
+(sv_SE only!)
+
 ```
-SELECT(localized_number(1234567, "se_SE"))
+SELECT(localized_number(1234567))
 ```
 
 Result: "1 234 567" 
 
 ```
-SELECT(localized_currency(1234567, "SEK", "se_SE))
+SELECT(localized_currency(1234567))
 ```
 
 Result: "1 234 567,00 kr"
