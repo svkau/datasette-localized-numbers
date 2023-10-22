@@ -1,6 +1,6 @@
 [project]
 name = "datasette-localized-numbers"
-version = "0.1"
+version = "0.2"
 description = "Adds filter for Ninja to show localized numbers."
 readme = "README.md"
 authors = [{name = "Henrik Vitalis"}]
@@ -16,10 +16,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/vitlais/datasette-localized-numbers"
-Changelog = "https://github.com/vitlais/datasette-localized-numbers/releases"
-Issues = "https://github.com/vitlais/datasette-localized-numbers/issues"
-CI = "https://github.com/vitlais/datasette-localized-numbers/actions"
+Homepage = "https://github.com/svkau/datasette-localized-numbers"
+Changelog = "https://github.com/svkau/datasette-localized-numbers/releases"
+Issues = "https://github.com/svkau/datasette-localized-numbers/issues"
+CI = "https://github.com/svkau/datasette-localized-numbers/actions"
 
 [project.entry-points.datasette]
 localized_numbers = "datasette_localized_numbers"
